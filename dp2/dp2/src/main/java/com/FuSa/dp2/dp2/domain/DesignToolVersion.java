@@ -1,15 +1,13 @@
 package com.FuSa.dp2.dp2.domain;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
+import javax.validation.constraints.Size;
 
 @Entity
 public class DesignToolVersion {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column
     private Long id;
 
@@ -19,6 +17,7 @@ public class DesignToolVersion {
 
     private String iecQual;
 
+    @Size(max = 1000)
     private String resultsLink;
 
     public Long getId() {

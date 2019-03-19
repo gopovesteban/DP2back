@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/fusa")
+@RequestMapping("/fusa/software")
 public class SoftwareToolController {
 
     private final SoftwareToolService softwareToolService;

@@ -8,7 +8,7 @@ import java.util.Set;
 public class DesignToolCategory {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column
     private Long id;
 
